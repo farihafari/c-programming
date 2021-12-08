@@ -1,0 +1,47 @@
+
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+int main(){
+    int num1, num2;
+    int sum,sub,mult,divi,res;
+    printf("Enter the value for arithimetic operation: ");
+    scanf("%d%d",&num1,&num2);
+    sum=num1+num2;
+    sub=num1-num2;
+    mult=num1*num2; 
+    divi=num1/num2;
+    printf("\nSum of %d is:\n ",sum);
+    printf("\nsub of %d is:\n ",sub);
+    printf("\nmuliplication of %d is:\n ", mult);
+    printf("\n dividion of %d is:\n ",divi);
+    
+    printf("\nEnter the values for arithimetic operation:\n ");
+    scanf("%d%d",&num1,&num2);
+    
+    printf("\n press 1 for addition\n");
+    printf("\n press 2 for subtraction\n");
+    printf("\n press 3 for nmuliplication\n");
+    printf("\n press 4 for dividion\n");
+    scanf("%d",&res);
+    switch(res){
+        
+        case 1: res=num1+num2;
+        printf("\n%d",res);
+        break;
+        case 2: res=num1-num2;
+        printf("\n%d",res);
+        break;
+        case 3: res=num1*num2;
+        printf("\n%d",res);
+        break;
+        case 4: res=num1/num2;
+        printf("\n%d",res);
+        break;
+        default: printf("\n sorry you have entered wrog value\n");
+        
+    }
+    getch();
+    return 0;
+}
